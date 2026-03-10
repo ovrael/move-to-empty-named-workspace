@@ -19,7 +19,7 @@ fi
 current_workspace_name=$(hyprctl activeworkspace -j | jq -r '.name')
 
 ### START USER CHANGE - WORKSPACES LIST
-workspaces=("main" "gaming" "coding" "terminal" "media") # your workspaces e.g. ("main" "gaming" "coding")
+workspaces=() # your workspaces e.g. ("main" "gaming" "coding")
 ### END   USER CHANGE
 
 count=${#workspaces[@]}
